@@ -23,6 +23,7 @@
     "db:seed:prices": "NODE_ENV=test ts-node test/seed_prices.ts",
     "dev": "./node_modules/nodemon/bin/nodemon.js --watch 'servers/**/*.ts' --exec 'ts-node' main.ts",
     "runtest": "NODE_ENV=test mocha --require=ts-node/register $TEST --timeout=20000 --exit",
+    "prisma:generate": "prisma generate",
     "start": "ts-node main.ts",
     "test": "NODE_ENV=test mocha --require=ts-node/register --timeout=20000 test/integration/*.ts test/models/*_test.ts test/lib/*_test.ts --exit",
     "test:models": "NODE_ENV=test mocha --require=ts-node/register --timeout=20000 test/models/*_test.ts --exit",

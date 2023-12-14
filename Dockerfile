@@ -14,4 +14,6 @@ RUN npm install
 # Bundle app source
 COPY . /usr/src/app
 
+RUN npm run prisma:generate
+
 CMD ts-node main.ts
